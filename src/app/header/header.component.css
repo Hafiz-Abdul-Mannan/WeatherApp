@@ -16,3 +16,17 @@
 h3{
     margin: 0;
 }
+button{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    z-index: 11;
+}
+.toggle-button{
+    font-size: 10px;
+}
+.theme{
+    display: flex;
+    align-items: center;
+}

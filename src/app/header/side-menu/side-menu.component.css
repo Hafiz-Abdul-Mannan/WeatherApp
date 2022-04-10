@@ -1,0 +1,21 @@
+.hamburger-menu{
+    background:#2B244D;;
+    position:absolute;
+    z-index: 10;
+    height: 100%;
+    width: 20%;
+    padding-left: 60px;
+    padding-top: 10px;  
+    color: #fff;
+}
+.user-profile{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    grid-row: 1/span 3;
+}

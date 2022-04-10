@@ -1,6 +1,9 @@
+<app-side-menu class="side-menu" *ngIf="showmenu"></app-side-menu>
 <nav class="navbar">
     <div class="logo_menu">
-        <mat-icon>menu</mat-icon>
+        <button (click)="displaymenu()">
+            <mat-icon>menu</mat-icon>
+        </button>
         <svg class="logo__icon" viewBox="150.3 22.2 213.7 42.8">
             <path fill="#00ff9b" d="M150.3 65V22.2L193 65z" data-name="Path 1"></path>
             <path fill="#003eff" d="M193.1 65h-42.8L193 22.2z" data-name="Path 2"></path>
@@ -13,12 +16,7 @@
     <h3>TODAY</h3>
     <div class="theme">
         <span>Light</span>
-        <label class="toggle-button__container">
-            <input type="checkbox" class="mode-toggle__input" />
-            <span class="mode-toggle__bg"></span>
-            <span class="mode-toggle__circle"></span>
-        </label>
+        <mat-slide-toggle class="toggle-button"></mat-slide-toggle>
         <span>Dark</span>
-
     </div>
 </nav>

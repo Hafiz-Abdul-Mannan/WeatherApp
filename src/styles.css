@@ -2,3 +2,11 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.carousel-container .carousel-cells{ 
+    background: aliceblue;
+    display: flex;
+}
+
+.carousel-cell{
+  border-radius: 15px;
+}

@@ -1,127 +1,69 @@
+
 .container{
-    background:linear-gradient( #1b0027, #000);
+    background:linear-gradient( #b572d1, #000);
     height: 92vh;
     width: 100%;
     position: relative;
-}
-.main-card{
-    width: 90vw;
-    height: 87vh;
-    display:flex;
-    justify-content: center;
-    border-radius: 10px;
-    overflow:hidden;
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%,-50%);
-}
-.city-search-card{
-    background: #ffffff;
     display: flex;
-    flex-flow: column;
-    flex: 1 1;
-    position: relative;
     justify-content: center;
     align-items: center;
-
 }
-.favorite-city-card{
-    color: #fff;
-    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),url(https://upload.wikimedia.org/wikipedia/commons/2/28/Rome-_Ruins_of_the_Forum%2C_Looking_towards_the_Capitol.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    flex: 1 1;
-    position: relative;;
+.zeeshan{
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items:center;
+    align-items: center;
+}
+.panel{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    width:80%;
 }
 .city-weather-card{
-  background:linear-gradient( #1b0027, #000);
-  color: #fff;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4,1fr);
-  box-shadow: 0 0 2rem rgba(0, 0, 255, 0.1);
-  justify-items: center;
-  padding: 2rem;
-  margin: 2rem;
-  width: 15rem;
-  height: 20rem;
-  cursor: pointer;
-  background-color: white;
-  border-radius: 1.75rem;
-  position: relative;
-}
-.add-city-button{
-    background: #1b0027;
-    border: none;
+    background:linear-gradient( #8303b9, rgb(36, 5, 146));
     color: #fff;
-    padding: 0.5rem 1.5rem;
-    border-radius: 2rem;
-    position: absolute;
-    top:95%;
+    box-shadow: 0 0 2rem rgba(0, 0, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding: 2rem;
+    margin: 10px;
     cursor: pointer;
-}
-.favorite-city-card button{
-    color: #fff;
-    background: gray;
-    border: none;
-    border-radius: 2rem;
-    padding: 0.5rem 1rem;
-}
-.city-search{
-    color:#2B244D;
-    font-weight:600;
-    margin: 0.7rem auto;
-}
-.search-bar input{
-    width: 20rem;
-    height: 2rem;
-    border-radius: 2rem;
-    border: none;
-    box-shadow: 0 0 1rem 1rem rgba(0, 0, 255, 0.1);
-    outline: none;
-    padding: 20px ;
-}
-.search-bar{
-    position: relative;
-}
-.search-bar button{
-    color:#fff;
-    background: turquoise;
-    border: none;
-    border-radius: 2rem;
+    border-radius: 1.75rem;
+    height: -webkit-fill-available;
+
+  }
+  .city-weather-card>span{
+      height: 20%;
+  }
+  .city-weather-card>img{
+      height: 40%;
+  }
+  .min-container,.max-container{
+    margin: 1rem 3rem;
     text-align: center;
-    align-content: center;
-    position: absolute;
-    left: 90%;
-    top:-12%;
-    padding: 0.4rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.min-max{
+    align-items: center;
+    display: flex;
 }
 .city-weather-card .city-name, .city-weather-card .temperature{
     font-size: 20px;
 }
 .city-name{
     font-weight: 200;
-}
-.min-max{
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
+    justify-content: center;
     align-items: center;
 }
-.min-container,.max-container{
-    margin: 1rem 3rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    text-align: center;
-}
+
 .current-status{
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 .min-color{
     color: turquoise;
@@ -129,29 +71,13 @@
 .max-color{
     color: tomato;
 }
-.city-weather-card img{
-    width: 70px;
+a{
+    color:gray;
+    padding: 10px;
+    background-color: #fff;
+    cursor:pointer;
 }
-.favorite-city-card h1{
-    position: absolute;
-    font-weight: 500;
-    top:5%;
-    padding: 20px 0;
-    border-bottom:1px solid #fff;
-}
-.favorite-city-card .date{
-    position: absolute;
-    top:20%;
-}
-.favorite-city-name{
-    font-size: x-large;
-    margin: 20px 0;
-}
-.favorite-city-temperature{
-    font-size: 50px;
-    margin: 20px 0;
-}
-.favorite-city-card img{
-    margin-top: 100px;
-    width: 100px;
+.left-arrow .right-arrow{
+    color: #fff;
+    font-size: 200px;
 }
