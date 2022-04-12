@@ -17,8 +17,10 @@ export class MainComponent implements OnInit {
   cellsToShow = 3;
   cellWidth = 250;
   arrowsOutside = true;
-  image = '../../assets/images/' + this.weatherInCities.weather + '.png';
-
+  // i: number = 0;
+  // get image() {
+  //   return '../../assets/images/' + this.weatherInCities[this.i].weather + '.png';
+  // }
   get zeeshan() {
     return 150;
   }
@@ -33,7 +35,15 @@ export class MainComponent implements OnInit {
     })
     console.log(screen.width);
   }
+  weather = ['Sunny', 'Clouds', 'Rain'];
 
+  image(name: string) {
+    if (this.weather.includes(name)) {
+      return '../../assets/images/' + name + '.png';
+    }
+    return '../../assets/images/Sunny.png';
+
+  }
 
 }
 

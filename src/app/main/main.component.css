@@ -1,27 +1,30 @@
-
-.container{
-    background:linear-gradient( #b572d1, #000);
+.container {
+    background: linear-gradient(#b572d1, #000);
     height: 92vh;
     width: 100%;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
-.zeeshan{
+
+.zeeshan {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.panel{
+
+.panel {
     display: flex;
     flex-direction: row;
     align-items: center;
     overflow: hidden;
-    width:80%;
+    width: 80%;
 }
-.city-weather-card{
-    background:linear-gradient( #8303b9, rgb(36, 5, 146));
+
+.city-weather-card {
+    background: linear-gradient(#8303b9, rgb(36, 5, 146));
     color: #fff;
     box-shadow: 0 0 2rem rgba(0, 0, 255, 0.1);
     display: flex;
@@ -34,50 +37,66 @@
     border-radius: 1.75rem;
     height: -webkit-fill-available;
 
-  }
-  .city-weather-card>span{
-      height: 20%;
-  }
-  .city-weather-card>img{
-      height: 40%;
-  }
-  .min-container,.max-container{
+}
+
+.city-weather-card>span {
+    height: 20%;
+}
+
+.city-weather-card>img {
+    height: 40%;
+}
+
+.min-container,
+.max-container {
     margin: 1rem 3rem;
     text-align: center;
     display: flex;
     flex-direction: column;
 }
-.min-max{
+
+.min-max {
     align-items: center;
     display: flex;
 }
-.city-weather-card .city-name, .city-weather-card .temperature{
+
+.city-weather-card .city-name,
+.city-weather-card .temperature {
     font-size: 20px;
 }
-.city-name{
+
+.city-name {
     font-weight: 200;
     justify-content: center;
     align-items: center;
 }
 
-.current-status{
+.current-status {
     text-align: center;
     display: flex;
     flex-direction: column;
 }
-.min-color{
+
+.min-color {
     color: turquoise;
 }
-.max-color{
+
+.max-color {
     color: tomato;
 }
-a{
-    color:gray;
+
+a {
+    color: gray;
     padding: 10px;
     background-color: #fff;
-    cursor:pointer;
+    cursor: pointer;
 }
-.left-arrow .right-arrow{
+
+.left-arrow .right-arrow {
     color: #fff;
     font-size: 200px;
+}
+
+img {
+    width: 50% !important;
 }

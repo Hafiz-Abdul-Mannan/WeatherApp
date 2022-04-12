@@ -9,8 +9,5 @@ export class MainService {
     weatherData: any;
     constructor(private postService: PostService) { }
 
-    imageArray={
-        
-    }
 
 }

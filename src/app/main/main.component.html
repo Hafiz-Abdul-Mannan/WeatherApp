@@ -4,7 +4,7 @@
         <div class="carousel-cell" *ngFor="let city of weatherInCities">
             <div class="city-weather-card">
                 <span class="city-name">{{city.cityName}}</span>
-                <img src="../../assets/images/{{city.weather}}.png" alt="kidon">
+                <img [src]="image(city.weather)" alt="kidon">
                 <div class="current-status">
                     <span class="temperature">{{city.temperature}}°</span>
                     <br>
