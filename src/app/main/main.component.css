@@ -9,27 +9,13 @@
     z-index: 1;
 }
 
-.zeeshan {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.panel {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    overflow: hidden;
-    width: 80%;
-}
-
 .city-weather-card {
     background: linear-gradient(#8303b9, rgb(36, 5, 146));
     color: #fff;
     box-shadow: 0 0 2rem rgba(0, 0, 255, 0.1);
     display: flex;
     flex-direction: column;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
     padding: 2rem;
     margin: 10px;
@@ -99,4 +85,40 @@ a {
 
 img {
     width: 50% !important;
+}
+
+.city-weather-card .add {
+    background-color: rgb(32, 4, 131);
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 1px solid;
+    border-style: none;
+    font-size: 10ch;
+    color: #fff;
+    cursor: pointer;
+}
+
+.search-bar input {
+    width: 12rem;
+    position: relative;
+    height: 0.7rem;
+    border-radius: 2rem;
+    border: none;
+    box-shadow: 0 0 1rem 1rem rgba(0, 0, 255, 0.1);
+    outline: none;
+    padding: 20px;
+}
+
+.search-bar button {
+    color: #fff;
+    background: turquoise;
+    border: none;
+    border-radius: 2rem;
+    text-align: center;
+    align-content: center;
+    position: absolute;
+    left: 75%;
+    top: 45%;
+    padding: 0.5rem 0.6rem;
 }

@@ -1,6 +1,6 @@
 <div class="container">
-    <carousel [arrowsOutside]="arrowsOutside" [height]="height" [width]="width" [cellsToShow]="cellsToShow"
-        class="zeeshan">
+    <carousel [overflowCellsLimit]="overflowCellsLimit" [arrowsOutside]="arrowsOutside" [height]="height"
+        [width]="width" [cellsToShow]="cellsToShow">
         <div class="carousel-cell" *ngFor="let city of weatherInCities">
             <div class="city-weather-card">
                 <span class="city-name">{{city.cityName}}</span>
@@ -22,6 +22,20 @@
                         <span class="max-color">Max</span>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div *ngIf="!showSearchCard" class="carousel-cell">
+            <div class="city-weather-card">
+                <button class="add" (click)="onAdd()">+</button>
+            </div>
+        </div>
+        <div *ngIf="showSearchCard" class="carousel-cell">
+            <div class="city-weather-card search-bar">
+                <input type="text" #cityName>
+                <button href="" (click)="onSearch(cityName.value)">
+                    <mat-icon>search</mat-icon>
+
+                </button>
             </div>
         </div>
     </carousel>
